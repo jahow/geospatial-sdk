@@ -2,6 +2,10 @@
 import ExampleContainer from '@/components/ExampleContainer.vue'
 import ExampleSimpleMap from '@/examples/Example-SimpleMap.vue'
 import ExampleSimpleMapRaw from '@/examples/Example-SimpleMap.vue?raw'
+import ExampleGPFWidget from '@/examples/Example-GPFWidget.vue'
+import ExampleGPFWidgetRaw from '@/examples/Example-GPFWidget.vue?raw'
+import ExampleGPFWidgets from '@/examples/Example-GPFWidgets.vue'
+import ExampleGPFWidgetsRaw from '@/examples/Example-GPFWidgets.vue?raw'
 import ExampleMapAddRemoveLayers from '@/examples/Example-MapAddRemoveLayers.vue'
 import ExampleMapAddRemoveLayersRaw from '@/examples/Example-MapAddRemoveLayers.vue?raw'
 import ExampleGeocoding from '@/examples/Example-Geocoding.vue'
@@ -28,6 +32,20 @@ onMounted(() => {
       :source-code="ExampleSimpleMapRaw"
     >
       <ExampleSimpleMap></ExampleSimpleMap>
+    </ExampleContainer>
+    <ExampleContainer
+      example-name="Example 1-1: simple map with a simple GPF widget"
+      example-id="example01"
+      :source-code="ExampleGPFWidgetRaw"
+    >
+      <ExampleGPFWidget></ExampleGPFWidget>
+    </ExampleContainer>
+    <ExampleContainer
+      example-name="Example 1-2: simple map with multiple GPF widgets"
+      example-id="example01"
+      :source-code="ExampleGPFWidgetsRaw"
+    >
+      <ExampleGPFWidgets></ExampleGPFWidgets>
     </ExampleContainer>
     <ExampleContainer
       example-name="Example 2: add and remove layers"
